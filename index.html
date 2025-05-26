@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="assets/swiper-bundle.min.js"></script>
+    <script type="module" crossorigin src="./assets/index-BEE63AwD.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-ZVq-7zXQ.css">
+  </head>
+  <body dir="rtl">
+
+    <!-- #region loader -->
+    <div
+      id="loader-wrapper"
+      class="fixed inset-0 flex items-center justify-center bg-white z-[200]"
+    >
+      <div class="loader"></div>
+    </div>
+    <!-- #endregion -->
+    <!-- #region cover -->
+    <div
+      id="cover"
+      class="fixed top-0 left-0 w-full h-full -z-50 duration-300"
+    ></div>
+    <!-- #endregion -->
+    <!-- #region header -->
+    <header class="sticky top-0 left-0 z-[50]">
+      <div
+        class="w-full lg:h-[133px] h-[57px] shadow lg:pt-[24px] lg:bg-white bg-[#EFEFEF]"
+      >
+        <!-- #region cover-head -->
+        <div
+          id="cover-head"
+          class="absolute top-0 left-0 w-full h-full -z-50 duration-300"
+        ></div>
+        <!-- #endregion -->
+        <!-- #region burger -->
+        <div
+          id="burgerMenu"
+          class="absolute top-0 right-0 w-[300px] h-screen z-50 bg-white lg:hidden hidden"
+        >
+          <div id="burgerImg"></div>
+          <div class="flex border-y border-black/10">
+            <!--Mobile Top Line-->
+            <div class="flex flex-1 lg:max-w-screen-xl mx-auto px-4">
+              <div id="TopLine" class="flex w-full justify-between"></div>
+            </div>
+          </div>
+          <!-- #region shortMenuList -->
+          <div class="overflow-y-scroll mt-4 mr-2 mb-16 h-[40vh]">
+            <div id="MobListMenu" class="flex flex-col text-[#000000de]"></div>
+          </div>
+          <!-- #endregion -->
+          <div id="burgerEnter"></div>
+        </div>
+        <!-- #endregion -->
+        <!-- #region header-box -->
+        <div
+          class="header-box max-w-[1280px] h-full mx-auto px-[16px] lg:block flex items-center"
+        >
+          <!-- #region header-box(top) -->
+          <div
+            id="head"
+            class="header-box-top w-full h-[45px] flex justify-between items-center"
+          ></div>
+          <!-- #endregion -->
+
+          <!-- #region header-box(nav) -->
+          <nav class="w-full h-[56px] mt-[8px] lg:block hidden">
+            <div class="w-full h-full">
+              <ul
+                id="menuList"
+                class="w-full h-full flex justify-between items-center font-[shabnam] font-[400] xl:text-sm text-xs leading-[21px] relative"
+              ></ul>
+            </div>
+          </nav>
+          <!-- #endregion -->
+        </div>
+        <!-- #endregion -->
+      </div>
+    </header>
+    <!-- #endregion -->
+    <!-- #region main -->
+    <main>
+      <!-- #region sec-1 -->
+      <section class="max-w-screen-xl mx-auto p-8">
+        <div class="swiper mySwiper sliders-1 w-full h-[full]">
+          <div class="swiper-wrapper"></div>
+
+          <!-- Swiper pagination -->
+          <div class="swiper-pagination swiper-pagination1"></div>
+        </div>
+      </section>
+      <!-- #endregion -->
+      <!-- #region sec-2 -->
+      <section>
+        <div class="max-w-screen-xl mx-auto">
+          <div class="portlet" id="yw1">
+            <div class="portlet-content">
+              <div
+                class="px-4 pb-4 md:px-12 md:pb-12 xl:mx-4 bg-[#E2E2E2] xl:rounded-xl mb-8"
+              >
+                <div class="py-6">
+                  <div
+                    id="off"
+                    class="flex justify-center items-center md:justify-between"
+                  ></div>
+                </div>
+
+                <div class="flex flex-col md:flex-row">
+                  <div id="off-1" class="column_2 flex"></div>
+
+                  <!--Column in mobile-->
+                  <div
+                    id="off-2"
+                    class="flex flex-col justify-between w-full lg:w-auto"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #endregion -->
+      <!-- #region sec-3 -->
+      <section class="p-[16px] mb-[32px]">
+        <div
+          id="slider2-title"
+          class="mx-auto max-w-[1248px] w-full text-center mb-[16px] font-[shabnam] font-[700] text-[24px] leading-[36px] text-[#000000de]"
+        ></div>
+        <!-- Swiper -->
+        <div class="swiper sliders-2 max-w-[1248px] w-full py-4">
+          <div id="slider2-swiper" class="swiper-wrapper"></div>
+          <!-- Navigation -->
+          <div
+            class="swiper-button-next swiper-button-next2 !w-[40px] !h-[40px] bg-white border border-[#949494] flex justify-center items-center p-[8px] rounded-full hover:!bg-![#8e8e8e] duration-300"
+          ></div>
+          <div
+            class="swiper-button-prev swiper-button-prev2 !w-[40px] !h-[40px] bg-white border border-[#949494] flex justify-center items-center p-[8px] rounded-full hover:!bg-![#8e8e8e] duration-300"
+          ></div>
+        </div>
+      </section>
+      <!-- #endregion -->
+      <!-- #region sec-4 -->
+      <section class="max-w-screen-xl mx-auto mb-8">
+        <div
+          class="xl:px-[46px] px-[20px] pb-[32px] md:px-12 bg-[#E2E2E2] xl:rounded-xl mb-8 xl:mx-4"
+        >
+          <div
+            id="slider3-title"
+            class="flex w-full justify-between py-8"
+          ></div>
+          <!-- Swiper -->
+          <div class="swiper sliders-3 max-w-[1248px] w-full py-4">
+            <div id="slider3-swiper" class="swiper-wrapper"></div>
+            <!-- Navigation -->
+            <div
+              class="swiper-button-next swiper-button-next3 !w-[32px] !h-[32px] bg-white border border-[#949494] flex justify-center items-center p-[8px] rounded-full hover:!bg-[#8e8e8e] duration-300"
+            ></div>
+            <div
+              class="swiper-button-prev swiper-button-prev3 !w-[32px] !h-[32px] bg-white border border-[#949494] flex justify-center items-center p-[8px] rounded-full hover:!bg-[#8e8e8e] duration-300"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <!-- #endregion -->
+      <!-- #region sec-5 -->
+      <section class="max-w-screen-xl mx-auto hidden md:block p-4 mb-8">
+        <div id="topic-sec5"></div>
+        <div id="title-sec5" class="flex"></div>
+      </section>
+      <!-- #endregion -->
+      <!-- #region sec-6 -->
+      <section class="max-w-screen-xl mx-auto mb-8">
+        <div
+          class="xl:px-[46px] px-[20px] pb-[32px] md:px-12 bg-[#E2E2E2] xl:rounded-xl mb-8 xl:mx-4"
+        >
+          <div
+            id="slider4-title"
+            class="flex w-full justify-between py-8"
+          ></div>
+          <!-- Swiper -->
+          <div class="swiper sliders-4 max-w-[1248px] w-full py-4">
+            <div id="slider4-swiper" class="swiper-wrapper"></div>
+            <!-- Navigation -->
+            <div
+              class="swiper-button-next swiper-button-next4 !w-[32px] !h-[32px] bg-white border border-[#949494] flex justify-center items-center p-[8px] rounded-full hover:!bg-[#8e8e8e] duration-300"
+            ></div>
+            <div
+              class="swiper-button-prev swiper-button-prev4 !w-[32px] !h-[32px] bg-white border border-[#949494] flex justify-center items-center p-[8px] rounded-full hover:!bg-[#8e8e8e] duration-300"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <!-- #endregion -->
+      <!-- #region sec-7 -->
+      <section class="md:rounded-xl max-w-screen-xl mx-auto relative px-4">
+        <div class="max-w-screen-xl mx-auto mb-4">
+          <div
+            id="slider5-title"
+            class="h-[44px] max-w-[1248px] w-full font-[shabnam] font-[700] text-[24px] leading-[36px] text-[#757575]"
+          ></div>
+          <!-- Swiper -->
+          <div class="swiper sliders-5 max-w-[1248px] w-full py-4">
+            <div id="slider5-swiper" class="swiper-wrapper"></div>
+            <!-- Navigation -->
+            <div
+              class="swiper-button-next swiper-button-next5 !w-[32px] !h-[32px] bg-white border border-[#949494] flex justify-center items-center p-[8px] rounded-full hover:!bg-[#8e8e8e] duration-300"
+            ></div>
+            <div
+              class="swiper-button-prev swiper-button-prev5 !w-[32px] !h-[32px] bg-white border border-[#949494] flex justify-center items-center p-[8px] rounded-full hover:!bg-[#8e8e8e] duration-300"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <!-- #endregion -->
+      <!-- #region sec-8 -->
+      <section class="max-w-screen-xl mx-auto pb-16 px-4">
+        <div class="flex flex-1 flex-col w-full justify-between pt-6 pb-2">
+          <div
+            id="slider6-topic"
+            class="flex w-full justify-between py-6"
+          ></div>
+        </div>
+        <div class="swiper sliders-6 max-w-[1248px] w-full py-4">
+          <div id="slider6-swiper" class="swiper-wrapper">
+            <!-- 1 -->
+
+            <!-- 1 -->
+          </div>
+          <!-- Swiper pagination -->
+          <div
+            class="swiper-pagination swiper-pagination6 !relative !bottom-0"
+          ></div>
+        </div>
+      </section>
+      <!-- #endregion -->
+    </main>
+    <!-- #endregion -->
+    <!-- #region footer -->
+    <footer>
+      <!-- #region f1 -->
+      <div id="f1" class="bg-[#E2E2E2] font-[shabnam-FD]"></div>
+      <!-- #endregion -->
+      <!-- #region f2 -->
+      <div id="f2" class="bg-[#F5F5F5] font-[Shabnam-FD]"></div>
+      <!-- #endregion -->
+      <!-- #region f3 -->
+      <div
+        id="f3"
+        class="bg-[#0a5abd] font-medium font-[shabnam-FD] text-sm text-center bg-color text-white py-3"
+      ></div>
+      <!-- #endregion -->
+    </footer>
+    <!-- #endregion -->
+
+    <script src="src/swiper/swiper-bundle.min.js"></script>
+  </body>
+</html>
