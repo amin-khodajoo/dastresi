@@ -1,4 +1,4 @@
-(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))l(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const o of t.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&l(o)}).observe(document,{childList:!0,subtree:!0});function r(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function l(e){if(e.ep)return;e.ep=!0;const t=r(e);fetch(e.href,t)}})();const h=async()=>{let s=[];try{s=(await(await fetch("https://amin-khodajoo.github.io/api-dastresi/db.json")).json()).menu.map((l,e)=>{if(!e==0)return`<span class="menu-item flex p-4 shortMenuList">
+(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))l(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const o of t.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&l(o)}).observe(document,{childList:!0,subtree:!0});function n(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function l(e){if(e.ep)return;e.ep=!0;const t=n(e);fetch(e.href,t)}})();const h=async()=>{let s=[];try{s=(await(await fetch("https://amin-khodajoo.github.io/api-dastresi/db.json")).json()).menu.map((l,e)=>{if(!e==0)return`<span class="menu-item flex p-4 shortMenuList">
                 <span
                   class="flex flex-1 font-[shabnam] font-[400] text-[16px] leading-[24px] cursor-pointer"
                   >${l.name}</span
@@ -23,7 +23,7 @@
                   </a>
                 </span>`).join("")}
               </div>
-              <!-- #endregion -->`}),document.querySelector("#MobListMenu").innerHTML=s.join(" ")}catch(a){console.log(a)}document.querySelectorAll(".shortMenuList").forEach(a=>{a.addEventListener("click",()=>{a.nextElementSibling.classList.toggle("hidden")})})};h();const m=async()=>{let s=[],a=[],r=[];try{let e=await(await fetch("https://amin-khodajoo.github.io/api-dastresi/db.json")).json();s=e.burger.map((t,o)=>{if(o==1)return`
+              <!-- #endregion -->`}),document.querySelector("#MobListMenu").innerHTML=s.join(" ")}catch(a){console.log(a)}document.querySelectorAll(".shortMenuList").forEach(a=>{a.addEventListener("click",()=>{a.nextElementSibling.classList.toggle("hidden")})})};h();const m=async()=>{let s=[],a=[],n=[];try{let e=await(await fetch("https://amin-khodajoo.github.io/api-dastresi/db.json")).json();s=e.burger.map((t,o)=>{if(o==1)return`
 
         ${t.menu.map(p=>`<a
                     class="block p-3 text-xs text-[#a3a3a3] hover:text-black"
@@ -36,12 +36,12 @@
               src="${t.linkImage}"
               alt="${t.alt}"
             />
-          </a>`}),r=e.burger.map((t,o)=>{if(o==2)return`<a
+          </a>`}),n=e.burger.map((t,o)=>{if(o==2)return`<a
               class="p-3 text-sm block text-center rounded-xl mx-4 bg-[#0A295A] text-white hover:text-black mb-16"
               href="${t.link}"
             >
               ${t.name}
-            </a>`}),document.querySelector("#TopLine").innerHTML=s.join(" "),document.querySelector("#burgerImg").innerHTML=a.join(" "),document.querySelector("#burgerEnter").innerHTML=r.join(" ")}catch(l){console.log(l)}},b=async()=>{let s=[],a=[],r=[];try{let e=await(await fetch("https://amin-khodajoo.github.io/api-dastresi/db.json")).json("");s=e.footer.map(t=>{if(t.id==1)return`<div
+            </a>`}),document.querySelector("#TopLine").innerHTML=s.join(" "),document.querySelector("#burgerImg").innerHTML=a.join(" "),document.querySelector("#burgerEnter").innerHTML=n.join(" ")}catch(l){console.log(l)}},b=async()=>{let s=[],a=[],n=[];try{let e=await(await fetch("https://amin-khodajoo.github.io/api-dastresi/db.json")).json("");s=e.footer.map(t=>{if(t.id==1)return`<div
           class="flex flex-col lg:flex-row justify-between p-6 text-sm max-w-screen-xl mx-auto"
         >
           <div class="flex items-center mb-4 lg:mb-0">
@@ -125,7 +125,7 @@
                 alt=""
             /></a>
           </div>
-        </div>`}),r=e.footer.map(t=>{if(t.id==3)return`<span>${t.text}</span>`}),document.querySelector("#f1").innerHTML=s.join(""),document.querySelector("#f2").innerHTML=a.join(""),document.querySelector("#f3").innerHTML=r.join("")}catch(l){console.log(l)}document.querySelector("#btn").addEventListener("click",()=>{document.body.scrollTop=0,document.documentElement.scrollTop=0})},g=async()=>{try{let a=await(await fetch("https://amin-khodajoo.github.io/api-dastresi/db.json")).json();const r=`<div class="header-box-top-left flex  lg:gap-8 items-center max-w-2/3">
+        </div>`}),n=e.footer.map(t=>{if(t.id==3)return`<span>${t.text}</span>`}),document.querySelector("#f1").innerHTML=s.join(""),document.querySelector("#f2").innerHTML=a.join(""),document.querySelector("#f3").innerHTML=n.join("")}catch(l){console.log(l)}document.querySelector("#btn").addEventListener("click",()=>{document.body.scrollTop=0,document.documentElement.scrollTop=0})},g=async()=>{try{let a=await(await fetch("https://amin-khodajoo.github.io/api-dastresi/db.json")).json();const n=`<div class="header-box-top-left flex  lg:gap-8 items-center max-w-2/3">
               <span id="burger" class="icon-menu text-2xl ml-4 lg:hidden block"></span>
               <img
                 class="lg:w-[96px] lg:h-[40.89px] w-[58.67px] h-[24.98px] block"
@@ -186,7 +186,7 @@
               >
                 <span>${a.header[4].name}</span>
               </a>
-            </div>`;document.querySelector("#head").innerHTML=r;let l=document.querySelector("#search-box"),e=document.querySelector("#search"),t=document.querySelector("#cover"),o=document.querySelector("#cover-head");e.addEventListener("focus",()=>{l.classList.add("bg-white"),t.classList.add("!z-[50]","bg-black/10"),o.classList.add("!z-[50]","bg-black/10")}),e.addEventListener("blur",()=>{l.classList.remove("bg-white"),t.classList.remove("!z-[50]","bg-black/10"),o.classList.remove("!z-[50]","bg-black/10")}),document.querySelector("#burger").addEventListener("click",()=>{document.querySelector("#burgerMenu").classList.remove("hidden"),t.classList.add("!z-[50]","bg-black/10"),o.classList.add("!z-[50]","bg-black/10")}),document.querySelector("#burgerMenu").addEventListener("mouseleave",()=>{document.querySelector("#burgerMenu").classList.add("hidden"),t.classList.remove("!z-[50]","bg-black/10"),o.classList.remove("!z-[50]","bg-black/10")}),document.addEventListener("touchstart",p=>{const i=p.touches[0],d=document.elementFromPoint(i.clientX,i.clientY);!document.querySelector("#burgerMenu").contains(d)&&!document.querySelector("#burger").contains(d)&&(document.querySelector("#burgerMenu").classList.add("hidden"),t.classList.remove("!z-[50]","bg-black/10"),o.classList.remove("!z-[50]","bg-black/10"))})}catch(s){console.log(s)}},v=async()=>{try{let a=await(await fetch("https://amin-khodajoo.github.io/api-dastresi/db.json")).json(),r=document.createElement("link");r.rel="icon",document.head.appendChild(r),a.icon.map(l=>{r.href=l.href})}catch(s){console.log(s)}},w=async()=>{let s=[];try{let t=await(await fetch("https://amin-khodajoo.github.io/api-dastresi/db.json")).json();s=t.menu.map((o,p)=>p==0?`<li
+            </div>`;document.querySelector("#head").innerHTML=n;let l=document.querySelector("#search-box"),e=document.querySelector("#search"),t=document.querySelector("#cover"),o=document.querySelector("#cover-head");e.addEventListener("focus",()=>{l.classList.add("bg-white"),t.classList.add("!z-[50]","bg-black/10"),o.classList.add("!z-[50]","bg-black/10")}),e.addEventListener("blur",()=>{l.classList.remove("bg-white"),t.classList.remove("!z-[50]","bg-black/10"),o.classList.remove("!z-[50]","bg-black/10")}),document.querySelector("#burger").addEventListener("click",()=>{document.querySelector("#burgerMenu").classList.remove("hidden"),t.classList.add("!z-[50]","bg-black/10"),o.classList.add("!z-[50]","bg-black/10")}),document.querySelector("#burgerMenu").addEventListener("mouseleave",()=>{document.querySelector("#burgerMenu").classList.add("hidden"),t.classList.remove("!z-[50]","bg-black/10"),o.classList.remove("!z-[50]","bg-black/10")}),document.addEventListener("touchstart",p=>{const i=p.touches[0],d=document.elementFromPoint(i.clientX,i.clientY);!document.querySelector("#burgerMenu").contains(d)&&!document.querySelector("#burger").contains(d)&&(document.querySelector("#burgerMenu").classList.add("hidden"),t.classList.remove("!z-[50]","bg-black/10"),o.classList.remove("!z-[50]","bg-black/10"))})}catch(s){console.log(s)}},v=async()=>{try{let a=await(await fetch("https://amin-khodajoo.github.io/api-dastresi/db.json")).json(),n=document.createElement("link");n.rel="icon",n.type="image/png",document.head.appendChild(n),a.icon.map(l=>{n.href=l.href})}catch(s){console.log(s)}},w=async()=>{let s=[];try{let t=await(await fetch("https://amin-khodajoo.github.io/api-dastresi/db.json")).json();s=t.menu.map((o,p)=>p==0?`<li
                 class="text-[#fe5f55] border-[#fe5f55] border-solid border-b-[3px] h-[56px]"
               >
                 <a
@@ -284,30 +284,30 @@
                     </div>
                   </div>
                   <div class="w-full h-[3px] bg-[#fe5f55] hidden"></div>
-                </li>`),document.querySelector("#menuList").innerHTML=s.join(" ")}catch(e){console.log(e)}let a=document.querySelectorAll(".navList"),r=document.querySelector("#cover");a.forEach(e=>{e.addEventListener("mouseenter",()=>{e.firstElementChild.lastElementChild.classList.remove("hidden"),r.classList.add("!z-[50]","bg-black/10")})}),a.forEach(e=>{e.addEventListener("mouseleave",()=>{e.firstElementChild.lastElementChild.classList.add("hidden"),r.classList.remove("!z-[50]","bg-black/10")})});let l=document.querySelectorAll(".dropdown-childs");l.forEach(e=>{e.addEventListener("mouseenter",()=>{e.lastElementChild.classList.remove("hidden")})}),l.forEach(e=>{e.addEventListener("mouseleave",()=>{e.lastElementChild.classList.add("hidden")})})},y=async()=>{let s=[],a=[],r=[];try{let d=await(await fetch("https://amin-khodajoo.github.io/api-dastresi/db.json")).json();s=d.offer.map(n=>{if(n.id==0)return`<div
+                </li>`),document.querySelector("#menuList").innerHTML=s.join(" ")}catch(e){console.log(e)}let a=document.querySelectorAll(".navList"),n=document.querySelector("#cover");a.forEach(e=>{e.addEventListener("mouseenter",()=>{e.firstElementChild.lastElementChild.classList.remove("hidden"),n.classList.add("!z-[50]","bg-black/10")})}),a.forEach(e=>{e.addEventListener("mouseleave",()=>{e.firstElementChild.lastElementChild.classList.add("hidden"),n.classList.remove("!z-[50]","bg-black/10")})});let l=document.querySelectorAll(".dropdown-childs");l.forEach(e=>{e.addEventListener("mouseenter",()=>{e.lastElementChild.classList.remove("hidden")})}),l.forEach(e=>{e.addEventListener("mouseleave",()=>{e.lastElementChild.classList.add("hidden")})})},y=async()=>{let s=[],a=[],n=[];try{let d=await(await fetch("https://amin-khodajoo.github.io/api-dastresi/db.json")).json();s=d.offer.map(r=>{if(r.id==0)return`<div
                       class="flex items-center gap-2 font-bold text-2xl md:text-4xl font-[shabnam]"
                     >
                       <span
                         class="icon-percent text-[#FE5F55] w-[36px] h-[36px]"
                       ></span>
                       <span class="text-[#757575]"
-                        >${n.title}</span
+                        >${r.title}</span
                       >
                     </div>
                     <div class="hidden md:block text-2xl text-[#757575]">
                       <span id="time"
                        class="text-md font-medium font-[shabnam-MFD]"
-                        >${n.clock}</span
+                        >${r.clock}</span
                       >
-                    </div>`}),a=d.offer.map(n=>{if(n.id==1||n.id==2)return`<a href="${n.link}">
+                    </div>`}),a=d.offer.map(r=>{if(r.id==1||r.id==2)return`<a href="${r.link}">
                       <div
                         class="shadow hidden lg:flex h-full rounded-xl flex-col bg-white border-l border-b border-[#CBCBCB] p-4 md:ml-6 hover:shadow-2xl"
                       >
                         <div class="relative">
                           <img
                             class=""w-48 md:w-auto mx-auto""
-                            alt="${n.alt}"
-                            src=${n.linkImage}
+                            alt="${r.alt}"
+                            src=${r.linkImage}
                           />
                         </div>
 
@@ -315,7 +315,7 @@
                           <h3
                             class="font-medium font-[shabnam-MFD] text-[#000000de] flex-1 my-5 leading-8"
                           >
-                            ${n.title}
+                            ${r.title}
                           </h3>
 
                           <div class="flex flex-col gap-2">
@@ -323,12 +323,12 @@
                               <span
                                 class="font-bold text-[#00000061] text-base line-through font-[shabnam-FD]"
                               >
-                                ${n.real}
+                                ${r.real}
                               </span>
                               <span
                                 class="text-[#FE5F55] rounded-xl font-medium text-sm font-[shabnam-FD]"
                               >
-                                ${n.off}
+                                ${r.off}
                               </span>
                             </div>
                             <div
@@ -337,18 +337,18 @@
                               <span
                                 class="text-[#0951B7] font-bold text-xl font-[shabnam-FD]"
                               >
-                                ${n.price}
+                                ${r.price}
                               </span>
                               <span class="text-[#00000099] text-xs">
-                                ${n.toman}
+                                ${r.toman}
                               </span>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </a>`}),r=d.offer.map(n=>{if(n.id!=0)return n.id==1||n.id==2?`<a
+                    </a>`}),n=d.offer.map(r=>{if(r.id!=0)return r.id==1||r.id==2?`<a
                         class="lg:hidden mb-6 last:mb-0"
-                        href=${n.link}
+                        href=${r.link}
                       >
                         <div
                           class="rounded-xl shadow flex flex-row items-center bg-white border-l border-b border-[#CBCBCB] hover:shadow-2xl gap-2"
@@ -356,8 +356,8 @@
                           <div class="relative">
                             <img
                               class="w-40 mx-auto rounded-r-xl"
-                              alt="${n.alt}"
-                              src=${n.linkImage}
+                              alt="${r.alt}"
+                              src=${r.linkImage}
                             />
                           </div>
   
@@ -367,7 +367,7 @@
                             <h3
                               class="overflow-hidden font-[shabnam-MFD] text-sm text-[#000000de] flex-1 leading-7"
                             >
-                              ${n.title}
+                              ${r.title}
                             </h3>
   
                             <div class="flex flex-col gap-2">
@@ -375,12 +375,12 @@
                                 <span
                                   class="font-bold text-[#00000061] text-base line-through font-[shabnam-FD]"
                                 >
-                                  ${n.real}
+                                  ${r.real}
                                 </span>
                                 <span
                                   class="text-[#FE5F55] rounded-xl font-medium text-sm font-[shabnam-FD]"
                                 >
-                                  ${n.off}
+                                  ${r.off}
                                 </span>
                               </div>
   
@@ -390,10 +390,10 @@
                                 <span
                                   class="text-[#0951B7] font-bold text-xl font-[shabnam-FD]"
                                 >
-                                  ${n.price}
+                                  ${r.price}
                                 </span>
                                 <span class="text-[#00000099] text-xs">
-                                  ${n.toman}
+                                  ${r.toman}
                                 </span>
                               </div>
                             </div>
@@ -401,7 +401,7 @@
                         </div>
                       </a>`:`<a
                         class="mb-6 last:mb-0"
-                        href=${n.link}
+                        href=${r.link}
                       >
                         <div
                           class="rounded-xl shadow flex flex-row items-center bg-white border-l border-b border-[#CBCBCB] hover:shadow-2xl gap-2"
@@ -409,8 +409,8 @@
                           <div class="relative">
                             <img
                               class="w-40 mx-auto rounded-r-xl"
-                              alt="${n.alt}"
-                              src=${n.linkImage}
+                              alt="${r.alt}"
+                              src=${r.linkImage}
                             />
                           </div>
   
@@ -420,7 +420,7 @@
                             <h3
                               class="overflow-hidden font-[shabnam-MFD] text-sm text-[#000000de] flex-1 leading-7"
                             >
-                              ${n.title}
+                              ${r.title}
                             </h3>
   
                             <div class="flex flex-col gap-2">
@@ -428,12 +428,12 @@
                                 <span
                                   class="font-bold text-[#00000061] text-base line-through font-[shabnam-FD]"
                                 >
-                                  ${n.real}
+                                  ${r.real}
                                 </span>
                                 <span
                                   class="text-[#FE5F55] rounded-xl font-medium text-sm font-[shabnam-FD]"
                                 >
-                                  ${n.off}
+                                  ${r.off}
                                 </span>
                               </div>
   
@@ -443,16 +443,16 @@
                                 <span
                                   class="text-[#0951B7] font-bold text-xl font-[shabnam-FD]"
                                 >
-                                  ${n.price}
+                                  ${r.price}
                                 </span>
                                 <span class="text-[#00000099] text-xs">
-                                  ${n.toman}
+                                  ${r.toman}
                                 </span>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </a>`}),document.querySelector("#off").innerHTML=s.join(""),document.querySelector("#off-1").innerHTML=a.join(""),document.querySelector("#off-2").innerHTML=r.join("")}catch(i){console.log(i)}function l(i){const d=i.split(":").map(Number),[n,c,x]=d;return n*3600+c*60+x}function e(i,d){let n=i,c,x,f;const u=setInterval(function(){c=parseInt(n/3600,10),x=parseInt(n%3600/60,10),f=parseInt(n%60,10),c=c<10?"0"+c:c,x=x<10?"0"+x:x,f=f<10?"0"+f:f,d.textContent=c+":"+x+":"+f,--n<0&&clearInterval(u)},1e3)}const t=document.querySelector("#time"),o=t.textContent.trim(),p=l(o);e(p,t)},$=async()=>{let s=[];try{s=(await(await fetch("https://amin-khodajoo.github.io/api-dastresi/db.json")).json()).slider1.map(l=>`<a
+                      </a>`}),document.querySelector("#off").innerHTML=s.join(""),document.querySelector("#off-1").innerHTML=a.join(""),document.querySelector("#off-2").innerHTML=n.join("")}catch(i){console.log(i)}function l(i){const d=i.split(":").map(Number),[r,c,x]=d;return r*3600+c*60+x}function e(i,d){let r=i,c,x,f;const u=setInterval(function(){c=parseInt(r/3600,10),x=parseInt(r%3600/60,10),f=parseInt(r%60,10),c=c<10?"0"+c:c,x=x<10?"0"+x:x,f=f<10?"0"+f:f,d.textContent=c+":"+x+":"+f,--r<0&&clearInterval(u)},1e3)}const t=document.querySelector("#time"),o=t.textContent.trim(),p=l(o);e(p,t)},$=async()=>{let s=[];try{s=(await(await fetch("https://amin-khodajoo.github.io/api-dastresi/db.json")).json()).slider1.map(l=>`<a
                 href="${l.address}"
               class="swiper-slide flex items-center justify-center text-lg bg-white  cursor-pointer"
             >
@@ -471,7 +471,7 @@
                 />
                 </div>
             </a>
-        </div> `}),document.querySelector("#slider2-title").innerHTML=s.join(""),document.querySelector("#slider2-swiper").innerHTML=a.join("")}catch(r){console.log(r)}new Swiper(".sliders-2",{slidesPerView:2.5,spaceBetween:10,loop:!0,navigation:{nextEl:".swiper-button-next2",prevEl:".swiper-button-prev2"},autoplay:{delay:2e3,disableOnInteraction:!1},breakpoints:{320:{slidesPerView:3},768:{slidesPerView:5},1024:{slidesPerView:6}}})},k=async()=>{let s=[],a=[];try{let l=await(await fetch("https://amin-khodajoo.github.io/api-dastresi/db.json")).json();s=l.slider3.map(e=>{if(e.id==0)return`<span
+        </div> `}),document.querySelector("#slider2-title").innerHTML=s.join(""),document.querySelector("#slider2-swiper").innerHTML=a.join("")}catch(n){console.log(n)}new Swiper(".sliders-2",{slidesPerView:2.5,spaceBetween:10,loop:!0,navigation:{nextEl:".swiper-button-next2",prevEl:".swiper-button-prev2"},autoplay:{delay:2e3,disableOnInteraction:!1},breakpoints:{320:{slidesPerView:3},768:{slidesPerView:5},1024:{slidesPerView:6}}})},k=async()=>{let s=[],a=[];try{let l=await(await fetch("https://amin-khodajoo.github.io/api-dastresi/db.json")).json();s=l.slider3.map(e=>{if(e.id==0)return`<span
               class="text-2xl text-center font-bold text-[#757575] font-[shabnam]"
             >
               ${e.title}
@@ -579,7 +579,7 @@
                     ناموجود
                   </div>
                 </a>
-              </div>`}),document.querySelector("#slider3-title").innerHTML=s.join(""),document.querySelector("#slider3-swiper").innerHTML=a.join("")}catch(r){console.log(r)}new Swiper(".sliders-3",{slidesPerView:2.5,spaceBetween:20,loop:!0,navigation:{nextEl:".swiper-button-next3",prevEl:".swiper-button-prev3"},autoplay:{delay:2e3,disableOnInteraction:!1},breakpoints:{320:{slidesPerView:2},768:{slidesPerView:3},1024:{slidesPerView:4}}})},L=async()=>{let s=[],a=[];try{let l=await(await fetch("https://amin-khodajoo.github.io/api-dastresi/db.json")).json();s=l.slider4.map(e=>{if(e.id==0)return`<span
+              </div>`}),document.querySelector("#slider3-title").innerHTML=s.join(""),document.querySelector("#slider3-swiper").innerHTML=a.join("")}catch(n){console.log(n)}new Swiper(".sliders-3",{slidesPerView:2.5,spaceBetween:20,loop:!0,navigation:{nextEl:".swiper-button-next3",prevEl:".swiper-button-prev3"},autoplay:{delay:2e3,disableOnInteraction:!1},breakpoints:{320:{slidesPerView:2},768:{slidesPerView:3},1024:{slidesPerView:4}}})},L=async()=>{let s=[],a=[];try{let l=await(await fetch("https://amin-khodajoo.github.io/api-dastresi/db.json")).json();s=l.slider4.map(e=>{if(e.id==0)return`<span
                 class="text-2xl text-center font-bold text-[#757575] font-[shabnam]"
               >
                 ${e.title}
@@ -687,7 +687,7 @@
                       ناموجود
                     </div>
                   </a>
-                </div>`}),document.querySelector("#slider4-title").innerHTML=s.join(""),document.querySelector("#slider4-swiper").innerHTML=a.join("")}catch(r){console.log(r)}new Swiper(".sliders-4",{slidesPerView:2.5,spaceBetween:20,loop:!0,navigation:{nextEl:".swiper-button-next4",prevEl:".swiper-button-prev4"},autoplay:{delay:2e3,disableOnInteraction:!1},breakpoints:{320:{slidesPerView:2},768:{slidesPerView:3},1024:{slidesPerView:4}}})},S=async()=>{let s=[],a=[];try{let l=await(await fetch("https://amin-khodajoo.github.io/api-dastresi/db.json")).json();s=l.slider5.map(e=>{if(e.id==0)return`<span>${e.title}</span>`}),a=l.slider5.map(e=>{if(e.id!=0)return`<div class="swiper-slide w-[190.667px] h-[144px]">
+                </div>`}),document.querySelector("#slider4-title").innerHTML=s.join(""),document.querySelector("#slider4-swiper").innerHTML=a.join("")}catch(n){console.log(n)}new Swiper(".sliders-4",{slidesPerView:2.5,spaceBetween:20,loop:!0,navigation:{nextEl:".swiper-button-next4",prevEl:".swiper-button-prev4"},autoplay:{delay:2e3,disableOnInteraction:!1},breakpoints:{320:{slidesPerView:2},768:{slidesPerView:3},1024:{slidesPerView:4}}})},S=async()=>{let s=[],a=[];try{let l=await(await fetch("https://amin-khodajoo.github.io/api-dastresi/db.json")).json();s=l.slider5.map(e=>{if(e.id==0)return`<span>${e.title}</span>`}),a=l.slider5.map(e=>{if(e.id!=0)return`<div class="swiper-slide w-[190.667px] h-[144px]">
                 <a
                   class="flex flex-col items-center p-2 justify-center rounded-xl shadow-md bg-white my-4 hover:my-0 duration-300"
                   href="${e.link}"
@@ -698,7 +698,7 @@
                     alt="${e.alt}"
                   />
                 </a>
-              </div>`}),document.querySelector("#slider5-title").innerHTML=s.join(""),document.querySelector("#slider5-swiper").innerHTML=a.join("")}catch(r){console.log(r)}new Swiper(".sliders-5",{slidesPerView:2.5,spaceBetween:20,loop:!0,navigation:{nextEl:".swiper-button-next5",prevEl:".swiper-button-prev5"},autoplay:{delay:2e3,disableOnInteraction:!1},breakpoints:{320:{slidesPerView:3},768:{slidesPerView:5},1024:{slidesPerView:6}}})},E=async()=>{let s=[],a=[];try{let l=await(await fetch("https://amin-khodajoo.github.io/api-dastresi/db.json")).json();s=l.slider6.map(e=>{if(e.id==0)return`<span
+              </div>`}),document.querySelector("#slider5-title").innerHTML=s.join(""),document.querySelector("#slider5-swiper").innerHTML=a.join("")}catch(n){console.log(n)}new Swiper(".sliders-5",{slidesPerView:2.5,spaceBetween:20,loop:!0,navigation:{nextEl:".swiper-button-next5",prevEl:".swiper-button-prev5"},autoplay:{delay:2e3,disableOnInteraction:!1},breakpoints:{320:{slidesPerView:3},768:{slidesPerView:5},1024:{slidesPerView:6}}})},E=async()=>{let s=[],a=[];try{let l=await(await fetch("https://amin-khodajoo.github.io/api-dastresi/db.json")).json();s=l.slider6.map(e=>{if(e.id==0)return`<span
               class="text-2xl leading-[36px] text-center font-[shabnam] font-bold text-[#757575]"
             >
              ${e.title}
@@ -732,8 +732,8 @@
                   </div>
                 </div>
               </a>
-            </div>`}),document.querySelector("#slider6-topic").innerHTML=s.join(""),document.querySelector("#slider6-swiper").innerHTML=a.join("")}catch(r){console.log(r)}new Swiper(".sliders-6",{spaceBetween:20,loop:!0,autoplay:{delay:2e3,disableOnInteraction:!1},pagination:{el:".swiper-pagination6",clickable:!0},breakpoints:{320:{slidesPerView:2},768:{slidesPerView:3},1024:{slidesPerView:4}}})},q=async()=>{try{let a=await(await fetch("https://amin-khodajoo.github.io/api-dastresi/db.json")).json();document.title=a.title.map(r=>`${r.title}`).join("")}catch(s){console.log(s)}},F=async()=>{let s=[],a=[];try{let l=await(await fetch("https://amin-khodajoo.github.io/api-dastresi/db.json")).json();s=l.why.map(e=>{if(e.id==0)return`<h3 class="text-2xl font-[shabnam] text-center font-bold text-[#000000de] mb-8">${e.title}</h3>`}),a=l.why.map(e=>{if(e.id!=0)return`<div class="flex flex-col flex-1 h-full justify-center items-center p-4">
+            </div>`}),document.querySelector("#slider6-topic").innerHTML=s.join(""),document.querySelector("#slider6-swiper").innerHTML=a.join("")}catch(n){console.log(n)}new Swiper(".sliders-6",{spaceBetween:20,loop:!0,autoplay:{delay:2e3,disableOnInteraction:!1},pagination:{el:".swiper-pagination6",clickable:!0},breakpoints:{320:{slidesPerView:2},768:{slidesPerView:3},1024:{slidesPerView:4}}})},q=async()=>{try{let a=await(await fetch("https://amin-khodajoo.github.io/api-dastresi/db.json")).json();document.title=a.title.map(n=>`${n.title}`).join("")}catch(s){console.log(s)}},F=async()=>{let s=[],a=[];try{let l=await(await fetch("https://amin-khodajoo.github.io/api-dastresi/db.json")).json();s=l.why.map(e=>{if(e.id==0)return`<h3 class="text-2xl font-[shabnam] text-center font-bold text-[#000000de] mb-8">${e.title}</h3>`}),a=l.why.map(e=>{if(e.id!=0)return`<div class="flex flex-col flex-1 h-full justify-center items-center p-4">
                   <img class="w-16 mb-2" src="${e.linkImage}">
                   <p class="flex-1 text-center font-[shabnam] font-bold text-[#757575] mb-2">${e.title}</p>
                   <p class="text-center font-[shabnam] text-sm text-[#000000de] leading-7">${e.body}</p>
-              </div>`}),document.querySelector("#topic-sec5").innerHTML=s.join(""),document.querySelector("#title-sec5").innerHTML=a.join("")}catch(r){console.log(r)}};async function M(){await q(),await v(),await g(),await m(),await w(),await $(),await j(),await k(),await L(),await S(),await E(),await F(),await y(),await b()}window.addEventListener("load",async()=>{const s=document.getElementById("loader-wrapper");await M(),await new Promise(a=>setTimeout(a,1e3)),s.style.display="none"});
+              </div>`}),document.querySelector("#topic-sec5").innerHTML=s.join(""),document.querySelector("#title-sec5").innerHTML=a.join("")}catch(n){console.log(n)}};async function M(){await q(),await v(),await g(),await m(),await w(),await $(),await j(),await k(),await L(),await S(),await E(),await F(),await y(),await b()}window.addEventListener("load",async()=>{const s=document.getElementById("loader-wrapper");await M(),await new Promise(a=>setTimeout(a,1e3)),s.style.display="none"});
